@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>Orion Coin</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🌌 Orion Coin</h1>
+            <div class="stats">
+                <div>Balance: <span id="balance">0</span> ORION</div>
+                <div>Energy: <span id="energy">1000</span>/1000</div>
+            </div>
+        </header>
+
+        <main>
+            <!-- HOME -->
+            <section id="home-section" class="page active">
+                <div class="mining-area">
+                    <div id="coin" class="coin">🪙</div>
+                </div>
+                <div class="mining-speed">🚀 Mining Speed: <span id="mining-speed">1</span> ORION/min | Level <span id="level">1</span></div>
+                
+                <div class="shop">
+                    <h3>🔧 Upgrade Shop</h3>
+                    <div id="upgrades-list"></div>
+                </div>
+
+                <button id="daily-reward-btn">🌟 Claim Daily Reward</button>
+            </section>
+
+            <!-- LEADERBOARD -->
+            <section id="leaderboard-section" class="page">
+                <h2>🏆 Leaderboard</h2>
+                <div id="leaderboard-list"></div>
+            </section>
+
+            <!-- FRIENDS -->
+            <section id="friends-section" class="page">
+                <h2>👥 Friends & Referrals</h2>
+                <div class="referral-box">
+                    <p>Your Referral Link:</p>
+                    <input type="text" id="referral-link" readonly value="https://t.me/OrionCoinBot?start=youruserid">
+                    <button id="copy-btn">📋 Copy Link</button>
+                </div>
+            </section>
+
+            <!-- TASKS -->
+            <section id="tasks-section" class="page">
+                <h2>✅ Daily Tasks</h2>
+                <div id="tasks-list"></div>
+            </section>
+
+            <!-- WALLET -->
+            <section id="wallet-section" class="page">
+                <h2>💼 Wallet</h2>
+                <p>Wallet features coming soon...</p>
+            </section>
+        </main>
+
+        <nav class="bottom-nav">
+            <button data-page="home" class="nav-btn active">🏠 Home</button>
+            <button data-page="leaderboard" class="nav-btn">🏆 LB</button>
+            <button data-page="friends" class="nav-btn">👥 Friends</button>
+            <button data-page="tasks" class="nav-btn">✅ Tasks</button>
+            <button data-page="wallet" class="nav-btn">💼 Wallet</button>
+        </nav>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
